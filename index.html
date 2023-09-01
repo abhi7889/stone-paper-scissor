@@ -1,0 +1,109 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+  </head>
+
+  <link rel="stylesheet" type="text/css" href="style.css" />
+
+
+  <body>
+    <section class="mainbox">
+      <div class="result">
+        <div class="name-list">
+          <ul type="none">
+            <li>ROCK</li>
+            <li>PAPER</li>
+            <li>SCISSORS</li>
+          </ul>
+        </div>
+        <div class="display-result">
+          <div class="result-box">
+            <h3>COMPUTER SCORE</h3>
+            <p class="points">0</p>
+          </div>
+          <div class="result-box">
+            <h3>YOUR SCORE</h3>
+            <p class="points">0</p>
+          </div>
+        </div>
+      </div>
+
+      <div class="hands">
+        <div class="hand rock" onclick="pickUserHand('rock')">
+          <img  src="/assets/Group 2.png" />
+          <img src="/assets/icons8-fist-67 1.png" class="fist-icon" />
+        </div>
+        <div class="hand scissors" onclick="pickUserHand('scissors')">
+          <img src="/assets/Group 3.png" />
+          <img src="/assets/17911 1.png" class="scissors-icon" />
+        </div>
+        <div class="hand scissors" onclick="pickUserHand('paper')">
+          <img class="buttons" src="/assets/Group 1.png" />
+          <img src="/assets/icons8-hand-64 1.png" class="paper-icon" />
+        </div>
+      </div>
+      <a class="nextbutton" id="nextb" href="hurray.html">NEXT</a>
+      <button class="rules-btn" tabindex="1" id="rulesButton">RULES</button>
+
+      <div class="rules-popup" id="rulesPopup">
+        <h2>Game Rules</h2>
+        <span class="close-btn" id="closeButton">&times;</span>
+        <div class="rules-list">
+          <ul>
+            <li>
+              Rock beats scissors, scissors beat paper, and paper beats rock.
+            </li>
+            <li>
+              Agree ahead of time whether you’ll count off “rock, paper,
+              scissors, shoot” or just “rock, paper, scissors.”
+            </li>
+            <li>
+              Use rock, paper, scissors to settle minor decisions or simply play
+              to pass the time.
+            </li>
+            <li>
+              If both players lay down the same hand, each player lays down
+              another hand.
+            </li>
+          </ul>
+        </div>
+      </div>
+
+      <div class="contest">
+        <div class="userhand">
+          <h1>YOU PICKED</h1>
+          <div class="handImageContainer">
+            <img id="userPickImage" src="/assets/Group 2.png" class="winner" />
+            <img
+              id="userPickIcon"
+              src="/assets/icons8-fist-67 1.png"
+            />
+          </div>
+        </div>
+        <div class="referee">
+          <div class="decision">
+            <h1>YOU WIN</h1>
+            <h2>AGAINST PC</h2>
+          </div>
+          <div class="newGame" id="replayButton" onclick="restartGame()">PLAY AGAIN</div>
+
+        </div>
+        <div class="computerhand">
+          <h1>PC PICKED</h1>
+          <div class="handImageContainer">
+            <img id="computerPickImage" src="/assets/Group 3.png" class="winner" />
+            <img
+              id="computerPickIcon"
+              src="/assets/17911 1.png"
+            />
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <script src="./script.js"></script>
+  </body>
+</html>
