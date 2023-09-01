@@ -1,13 +1,13 @@
 const handOptions = {
-  "rock": "/assets/Group 2.png",
-  "scissors": "/assets/Group 3.png",
-  "paper": "/assets/Group 1.png"
+  "rock": "./assets/Group 2.png",
+  "scissors": "./assets/Group 3.png",
+  "paper": "./assets/Group 1.png"
 };
 
 const handIcon = {
-  "rock": "/assets/icons8-fist-67 1.png",
-  "scissors": "/assets/17911 1.png",
-  "paper": "/assets/icons8-hand-64 1.png"
+  "rock": "./assets/icons8-fist-67 1.png",
+  "scissors": "./assets/17911 1.png",
+  "paper": "./assets/icons8-hand-64 1.png"
 };
 
 let YOUR_SCORE = 0;
